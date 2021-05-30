@@ -1,47 +1,52 @@
 package com.udacity.jwdnd.course1.cloudstorage.model;
 
 public class Note {
-    private Integer noteid;
-    private String notetitle;
-    private String notedescription;
-    private Integer userid;
+    private Integer noteId;
+    private String noteTitle;
+    private String noteDescription;
+    private Integer userId;
 
-    public Note(Integer noteid, String notetitle, String notedescription, Integer userid) {
-        this.noteid = noteid;
-        this.notetitle = notetitle;
-        this.notedescription = notedescription;
-        this.userid = userid;
+    public Note(Integer noteId, String noteTitle, String noteDescription, Integer userId) {
+        this.noteId = noteId;
+        this.noteTitle = noteTitle;
+        this.noteDescription = noteDescription;
+        this.userId = userId;
     }
 
-    public Integer getNoteid() {
-        return noteid;
+    public Note(String noteTitle, String noteDescription) {
+        this.noteTitle = noteTitle;
+        this.noteDescription = noteDescription;
     }
 
-    public void setNoteid(Integer noteid) {
-        this.noteid = noteid;
+    public Integer getNoteId() {
+        return noteId;
     }
 
-    public String getNotetitle() {
-        return notetitle;
+    public void setNoteId(Integer noteId) {
+        this.noteId = noteId;
     }
 
-    public void setNotetitle(String notetitle) {
-        this.notetitle = notetitle;
+    public String getNoteTitle() {
+        return noteTitle;
     }
 
-    public String getNotedescription() {
-        return notedescription;
+    public void setNoteTitle(String noteTitle) {
+        this.noteTitle = noteTitle;
     }
 
-    public void setNotedescription(String notedescription) {
-        this.notedescription = notedescription;
+    public String getNoteDescription() {
+        return noteDescription;
     }
 
-    public Integer getUserid() {
-        return userid;
+    public void setNoteDescription(String noteDescription) {
+        this.noteDescription = noteDescription;
     }
 
-    public void setUserid(Integer userid) {
-        this.userid = userid;
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 }
